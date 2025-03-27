@@ -1,0 +1,42 @@
+= Antora Combined Navigation tree builder with filter and version selector widget
+
+UX experiments in my company showed users are not quick to grasp or are not
+comfortable with default Antora UI selector, where components seem to be
+separate sections of the site with their own version.
+
+A lot of sites we look at had a long tree on the left, which, when properly
+named, seems to be better. On the other side, we still want to have Antora's
+component system with versioning.
+
+== Extension
+
+This extension builds a combined navigation tree for every version existing
+in current site build. UI addons provide
+
+1. dynamic filter for this combined tree
+2. site version selector dropdown
+
+In other words, versions from components as a whole provide a 'site version'
+rather than a 'component version' or 'page version'.
+
+link:/extension[more]
+
+== UI widgets
+
+=== Dynamic navigation tree filter
+
+When lots of documents are combined into one tree, it can become quite long
+and anything there is hard to find. Dynamic filter comes to help. It will
+start working after 3 characters input; all the trees will be opened up to
+the menu item containing searched text. Cross button or `Esc` key clear
+input field.
+
+link:/navtree-filter[more]
+
+=== Site version selector
+
+All the versions from all components in a build are collected and presented
+in a dropdown list. If there's only one version available, dropdown will be
+disabled, but will still show the version.
+
+link:/site-version-dropdown[more]
