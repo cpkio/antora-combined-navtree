@@ -1,0 +1,65 @@
+.component-versions-wrapper {
+  align-content: center;
+}
+
+.component-versions {
+  margin: 0 0.2rem 0 auto;
+  float: left;
+  font-size: 0.95em;
+}
+
+.component-versions.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  user-select: none;
+}
+
+.component-versions .version-menu-toggle {
+  color: inherit;
+  background: url(../img/chevron.svg) no-repeat;
+  background-position: right 0.5rem top 50%;
+  background-size: 0.8em;
+  background-color: var(--page-version-menu-background);
+  border: 1px solid var(--color-gray-60);
+  outline: none;
+  line-height: inherit;
+  padding: 0.5rem 0rem 0.5rem 0.5rem;
+  position: relative;
+  z-index: var(--z-index-page-version-menu);
+  display: block;
+  width: 13em;
+  text-align: left;
+}
+
+.component-versions .version-menu
+ {
+  min-width: 13em;
+  background: linear-gradient(to bottom, var(--page-version-menu-background) 0%, var(--page-version-menu-background) 100%) no-repeat;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.component-versions:not(.is-active) .version-menu {
+  display: none;
+}
+
+.component-versions .version {
+  display: block;
+  padding: 0.5rem;
+  color: #000;
+}
+
+.component-versions .version:hover {
+  background-color: var(--color-smoke-90);
+}
+
+.component-versions .version.is-current {
+  display: none;
+}
+
+.component-versions-label {
+  padding: .5rem .5rem .5rem 0rem;
+  float: left;
+  color: #000;
+  font-weight: var(--body-font-weight-bold);
+}

@@ -25,7 +25,7 @@ If `faux` component has another version but `master`, it will be preserved.
 .How site versions are built
 image::../images/pic1.png[]
 
-== Configuration
+== Configuration Example
 
 ----
 antora:

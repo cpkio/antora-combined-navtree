@@ -1,0 +1,19 @@
+.nav-filter {
+  width: 100%;
+}
+.nav-filter #nav-filter-input {
+  padding: 0.4em;
+  width: calc(100% - 2.5em);
+}
+.nav-filter #nav-filter-clear {
+  color: #c8c8c8;
+  font-size: 100%;
+  position: absolute;
+  right: 4.4em;
+  top: 0.9em;
+}
+
+.nav-filter #nav-filter-clear:hover {
+  color: #bf3b24;
+}
+

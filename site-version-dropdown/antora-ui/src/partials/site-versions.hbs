@@ -1,0 +1,5 @@
+      {{#if env.SITE_VERSIONS_MENU}}
+        {{#if page.attributes.componentsorder}}
+        {{{build-menu site.components page.component page.version page.attributes.componentsorder}}}
+        {{/if}}
+      {{/if}}

@@ -1,1 +1,12 @@
 = Navigation tree filter
+
+Navigation tree filter has to be UI-integrated. It consists of:
+
+* HTML snippet link:antora-ui/src/partials/nav-menu.hbs[nav-menu.hbs]
+* CSS code link:antora-ui/src/css/nav-filter.css[nav-filter.css]
+* JS code link:antora-ui/src/js/nav-filter.js[nav-filter.js]
+
+HTML code presumes you have FontAwesome available in your UI package.
+
+Filter starts working from 3 letters input. Input field can be cleared
+with `X` button or `Esc` key.

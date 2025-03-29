@@ -1,1 +1,21 @@
 = Site version selector
+
+* HTML with menu builder call link:antora-ui/src/partials/site-versions.hbs[site-versions.hbs]
++
+....
+{{#if env.SITE_VERSIONS_MENU}} <.>
+  {{#if page.attributes.componentsorder}} <.>
+  {{{build-menu site.components page.component page.version page.attributes.componentsorder}}}
+  {{/if}}
+{{/if}}
+....
+<.> Extension sets environment variable; no menu builder call if not set
+<.> Ensure `page-componentsorder` attribute is provided (see
+    link:../extension[extension] configuration example)
+
+* JS helper link:antora-ui/src/helpers/build-menu.js[build-menu.js]
++
+Helper returns HTML code to be inserted into page.
+
+* CSS link:antora-ui/src/css/site-versions.css[site-versions.css], mostly copied from Antora
+  UI Default package page version selector.
