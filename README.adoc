@@ -11,13 +11,14 @@ component system with versioning.
 == Extension
 
 This extension builds a combined navigation tree for every version existing
-in current site build. UI addons provide
+in current site build in a set order (`order` key). Components not in this
+order will be added to the bottom of the navtee in unspecified order.
 
-1. dynamic filter for this combined tree
-2. site version selector dropdown
+Versions from components as a whole provide a 'site version' rather than
+a 'component version' or 'page version'.
 
-In other words, versions from components as a whole provide a 'site version'
-rather than a 'component version' or 'page version'.
+Named components can be made to appear in every possible version of the
+site (`faux` key).
 
 link:/extension[more]
 
@@ -36,7 +37,7 @@ link:/navtree-filter[more]
 === Site version selector
 
 All the versions from all components in a build are collected and presented
-in a dropdown list. If there's only one version available, dropdown will be
-disabled, but will still show the version.
+in a dropdown list. If there's only one site version available, dropdown
+will be disabled, but will still show the version.
 
 link:/site-version-dropdown[more]
